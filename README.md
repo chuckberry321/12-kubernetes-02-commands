@@ -17,7 +17,7 @@ vagrant@vagrant:~/netology-12-kubernetes-02-commands$
 
 ## Задание 2: Просмотр логов для разработки
 
-1. Создание клиентского сертификаты.   
+1. Создание клиентского сертификата.   
 ```
 vagrant@vagrant:~/netology-12-kubernetes-02-commands$ mkdir cert && cd cert
 vagrant@vagrant:~/netology-12-kubernetes-02-commands/cert$ openssl genrsa -out user1.key 2048
@@ -101,7 +101,7 @@ vagrant@vagrant:~/netology-12-kubernetes-02-commands/cert$ kubectl create namesp
 Error from server (Forbidden): namespaces is forbidden: User "user1" cannot create resource "namespaces" in API group "" at the cluster scope
 ```
 
-3. Предоставление доступа пользователю, через создание роли и привязки роли.
+3. Предоставление доступа пользователю через создание роли и привязки роли.
 
 ```
 vagrant@vagrant:~/netology-12-kubernetes-02-commands$ cat role.yaml
